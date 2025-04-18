@@ -1,9 +1,11 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poetsen One',Arial, Helvetica, sans-serif;
+    line-height: 1.7;
 }
 
 .logo{
-    width: 20rem;
+    width: 15rem;
+    padding: 1rem;
 }
 
 .header{
@@ -20,8 +22,11 @@ body{
 }
 
 .mainSection{
+    
+    /* background: linear-gradient(to right, rgb(37, 108, 136), rgb(228, 239, 245)); */
     background-color: rgb(228, 239, 245);
     padding: 2rem;
+
 }
 .navBar{
     display: flex;
@@ -47,15 +52,16 @@ body{
 
 .entice{
     background-image: url("./pictures/footer-img.avif");
-    background-size: contain;
-    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: repeat;
     /* background-color: rgba(255, 255, 255, 0.3); White overlay */
     /* background-blend-mode: overlay; */
     padding: 2rem;
     color: rgb(8, 134, 202);
 }
 .headline{
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 1000;
 }
 
 .call{
@@ -75,7 +81,7 @@ body{
 }
 
 .bag,.bottle{
-    height: 15rem;
+    max-height: 15rem;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);;
 }
@@ -101,6 +107,45 @@ body{
     width: 100vw;
 }
 
+.featureContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.features{
+    padding:1rem;
+    background: linear-gradient(to left, rgb(37, 108, 136), rgb(228, 239, 245));
+}
+.num,.feature{
+    display: inline;
+    font-size: 1.5rem;
+}
+.f-img{
+    width: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+.hypeture{
+    margin-bottom: 2.5rem;
+}
+
+.hypeture-imgs{
+    display: flex;
+    flex-direction: column;
+}
+
+.num{
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(8, 134, 202);
+}
+
+.sectionTitle{
+    font-size: 2rem;
+    text-align: center;
+}
 
 @media (min-width: 50rem) {
     .navBar{
