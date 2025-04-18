@@ -1,14 +1,15 @@
-body{
-    font-family: 'Poetsen One',Arial, Helvetica, sans-serif;
+body {
+    font-family: 'Poetsen One', Arial, Helvetica, sans-serif;
     line-height: 1.7;
+    font-size: 1.2rem;
 }
 
-.logo{
+.logo {
     width: 15rem;
     padding: 1rem;
 }
 
-.header{
+.header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -16,26 +17,27 @@ body{
     justify-content: space-around;
 }
 
-.img{
+.img {
     max-width: 100%;
     height: auto;
 }
 
-.mainSection{
-    
+.mainSection {
+
     /* background: linear-gradient(to right, rgb(37, 108, 136), rgb(228, 239, 245)); */
     background-color: rgb(228, 239, 245);
     padding: 2rem;
 
 }
-.navBar{
+
+.navBar {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3.5vw;
 }
 
-.navlink{
+.navlink {
     text-decoration: none;
     /* padding: ; */
     /* margin: 0.3rem 6rem; */
@@ -44,13 +46,13 @@ body{
     padding: 0.5rem;
 }
 
-.navlink:hover{
+.navlink:hover {
     background-color: black;
     color: white;
     border-radius: 0.5rem;
 }
 
-.entice{
+.entice {
     background-image: url("./pictures/footer-img.avif");
     background-size: cover;
     background-repeat: repeat;
@@ -59,18 +61,20 @@ body{
     padding: 2rem;
     color: rgb(8, 134, 202);
 }
-.headline{
+
+.headline {
     font-size: 3.5rem;
     font-weight: 1000;
 }
 
-.call{
+.call {
     font-size: 2rem;
-   
+
 }
 
-.bottles, .bags{
-    margin: 2rem auto; 
+.bottles,
+.bags {
+    margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
     max-width: 70rem;
@@ -80,13 +84,15 @@ body{
     align-items: center;
 }
 
-.bag,.bottle{
+.bag,
+.bottle {
     max-height: 15rem;
     border-radius: 1rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    ;
 }
 
-.button{
+.button {
     display: block;
     font-size: 1.5rem;
     background-color: rgb(8, 134, 202);
@@ -96,60 +102,67 @@ body{
     transition: 0.3s;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.2);
     color: white;
     border-color: rgb(8, 134, 202);
     border-radius: 0.5rem;
 }
 
-.footer-img{
+.footer-img {
     width: 100vw;
 }
 
-.featureContainer{
+.featureContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
-.features{
-    padding:1rem;
+
+.features {
+    padding: 1rem;
     background: linear-gradient(to left, rgb(37, 108, 136), rgb(228, 239, 245));
 }
-.num,.feature{
+
+.num,
+.feature {
     display: inline;
     font-size: 1.5rem;
 }
-.f-img{
+
+.f-img {
     width: 20rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
 }
-.hypeture{
+
+.hypeture {
     margin-bottom: 2.5rem;
 }
 
-.hypeture-imgs{
+.hypeture-imgs {
     display: flex;
     flex-direction: column;
 }
 
-.num{
+.num {
     padding: 1rem;
     border-radius: 50%;
     color: white;
     background-color: rgb(8, 134, 202);
 }
 
-.sectionTitle{
+.sectionTitle {
     font-size: 2rem;
     text-align: center;
 }
 
-.testimonials{
+.testimonials {
     background-color: rgb(170, 206, 226);
+    padding: 1rem;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +171,8 @@ body{
 }
 
 .card {
-    background-color: rgb(228, 239, 245);;
+    background-color: rgb(228, 239, 245);
+    ;
     margin: 1rem;
     width: 15rem;
     padding: 2rem;
@@ -166,22 +180,59 @@ body{
     text-align: center;
 }
 
-.name{
+.name {
     font-size: 2rem;
 }
 
 .person {
-    margin: 0 auto;
+    margin: 1rem auto;
     border-radius: 50%;
-    width: 15rem;
+    width: 10rem;
+}
+
+.signUp{
+    background: linear-gradient(to right, rgb(37, 108, 136), rgb(228, 239, 245));
+    padding: 1rem;
+}
+
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 60rem;
+    margin: 2rem auto;
+    background-color: rgb(170, 206, 226);
+    border: 2px solid rgb(8, 134, 202);
+}
+
+.label {
+    display: block;
+    margin-top: 0.4rem;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.8rem 0;
+    border: 2px solid rgb(8, 134, 202);
+    border-radius: 4px;
+
 }
 
 @media (min-width: 50rem) {
-    .navBar{
+    .navBar {
         font-size: 1.5rem;
     }
 
-    .logo{
-        width: 20rem;;
+    .logo {
+        width: 20rem;
+        ;
+    }
+
+    .person {
+        width: 15rem;
     }
 }
