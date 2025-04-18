@@ -5,7 +5,7 @@ body {
 }
 
 .logo {
-    width: 15rem;
+    width: 4rem;
     padding: 1rem;
 }
 
@@ -17,17 +17,17 @@ body {
     justify-content: space-around;
 }
 
-.img {
-    max-width: 100%;
-    height: auto;
+.link{
+    text-decoration: none;
+}
+
+.prize{
+    color: rgb(8, 134, 202);
 }
 
 .mainSection {
-
-    /* background: linear-gradient(to right, rgb(37, 108, 136), rgb(228, 239, 245)); */
     background-color: rgb(228, 239, 245);
     padding: 2rem;
-
 }
 
 .navBar {
@@ -39,25 +39,22 @@ body {
 
 .navlink {
     text-decoration: none;
-    /* padding: ; */
-    /* margin: 0.3rem 6rem; */
-    color: black;
+    color: white;
     margin: 1rem 2vw;
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 
 .navlink:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 0.5rem;
 }
 
 .entice {
-    background-image: url("./pictures/footer-img.avif");
-    background-size: cover;
-    background-repeat: repeat;
-    /* background-color: rgba(255, 255, 255, 0.3); White overlay */
-    /* background-blend-mode: overlay; */
+    background-image: url("./pictures/all\ in\ one.webp");
+    background-size: contain;
+    background-color: rgb(228, 239, 245, 0.5);;
+    background-blend-mode: overlay;
     padding: 2rem;
     color: rgb(8, 134, 202);
 }
@@ -65,15 +62,14 @@ body {
 .headline {
     font-size: 3.5rem;
     font-weight: 1000;
+    padding-left: 3rem;
 }
 
 .call {
     font-size: 2rem;
-
 }
 
-.bottles,
-.bags {
+.products{
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -84,17 +80,14 @@ body {
     align-items: center;
 }
 
-.bag,
-.bottle {
+.product{
     max-height: 15rem;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    ;
 }
 
 .button {
     display: block;
-    font-size: 1.5rem;
     background-color: rgb(8, 134, 202);
     padding: 0.5rem;
     border-radius: 1rem;
@@ -107,10 +100,6 @@ body {
     color: white;
     border-color: rgb(8, 134, 202);
     border-radius: 0.5rem;
-}
-
-.footer-img {
-    width: 100vw;
 }
 
 .featureContainer {
@@ -219,7 +208,20 @@ body {
     margin: 0.8rem 0;
     border: 2px solid rgb(8, 134, 202);
     border-radius: 4px;
+}
 
+.footer{
+    background-image: url(./pictures/footer-img.avif);
+    height: 10rem;
+    padding: 1rem;
+}
+
+.copyRight{
+    color: rgb(37, 108, 136);
+    font-size: 1.7rem;
+    background-color: rgba(170, 206, 226, 0.459);
+    padding: 0.3rm;
+    text-align: center;
 }
 
 @media (min-width: 50rem) {
@@ -228,8 +230,7 @@ body {
     }
 
     .logo {
-        width: 20rem;
-        ;
+        width: 7rem;
     }
 
     .person {
