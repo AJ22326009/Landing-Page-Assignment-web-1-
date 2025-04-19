@@ -45,6 +45,7 @@ body {
     color: white;
     margin: 1rem 2vw;
     padding: 0.4rem;
+    transition: all 0.2s;
 }
 
 .navlink:hover {
