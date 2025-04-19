@@ -1,15 +1,28 @@
 body {
+    /* default font family, font height and line height */
     font-family: 'Poetsen One', Arial, Helvetica, sans-serif;
     line-height: 1.7;
     font-size: 1.2rem;
 }
 
+/* remove default underline of 'a' tag */
+.link{
+    text-decoration: none;
+}
+
+/* unique color for all prizes */
+.prize{
+    color: rgb(8, 134, 202);
+}
+
+/* hype logo */
 .logo {
     width: 4rem;
     padding: 1rem;
     animation: zoomInOut 1.5s ease 0.5s;
 }
 
+/* row flex for logo and nav */
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -18,20 +31,7 @@ body {
     justify-content: space-around;
 }
 
-.link{
-    text-decoration: none;
-}
-
-.prize{
-    color: rgb(8, 134, 202);
-}
-
-.mainSection {
-    background-color: rgb(228, 239, 245);
-    padding: 2rem;
-    text-align: center;
-}
-
+/* row flex for navigation panel */
 .navBar {
     display: flex;
     align-items: center;
@@ -39,6 +39,7 @@ body {
     font-size: 3.5vw;
 }
 
+/* style for each link in navigation panel */
 .navlink {
     text-decoration: none;
     color: white;
@@ -52,7 +53,15 @@ body {
     border-radius: 0.5rem;
 }
 
-.entice {
+/* the main container of the product section */
+.mainSection {
+    background-color: rgb(228, 239, 245);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* first half of product section with background image */
+.entice {/*goal: viewers should be enticed*/
     background-image: url("./pictures/all\ in\ one.webp");
     background-size: contain;
     background-color: rgb(228, 239, 245, 0.5);;
@@ -63,17 +72,20 @@ body {
     animation: rightToLeft 1.5s ease-out 2s;
 }
 
+/* message in .entice */
 .headline {
     font-size: 3.5rem;
     font-weight: 1000;
     padding-left: 3rem;
 }
 
+/* message in .entice */
 .call {
     font-size: 2rem;
 }
 
-.products{
+/* secound part of the product section */
+.products{/*row flex for arrange of all the products*/
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +96,7 @@ body {
     align-items: center;
 }
 
+/*each product*/
 .product{
     max-height: 15rem;
     border-radius: 1rem;
@@ -91,6 +104,7 @@ body {
     transition: transform 1s;
 }
 
+/*playing with your favorite product using different animations*/
 .left:hover{
     transform: rotate(-50deg);
 }
@@ -111,12 +125,13 @@ body {
     transform: translateX(1rem);
 }
 
+/* style for the two buttons */
 .button {
     display: block;
     background-color: rgb(8, 134, 202);
     padding: 0.5rem;
     border-radius: 1rem;
-    margin: 0 auto;
+    margin: 0 auto; /*always centered*/
     transition: 0.3s;
 }
 
@@ -126,6 +141,7 @@ body {
     border-color: rgb(8, 134, 202);
     border-radius: 0.5rem;
 }
+
 
 .featureContainer {
     display: flex;
@@ -196,7 +212,8 @@ body {
 .card {
     background-color: rgb(228, 239, 245);
     margin: 1rem;
-    width: 15rem;
+    max-width: 15rem;
+    height: 40rem;
     padding: 2rem;
     display: grid;
     text-align: center;
@@ -208,12 +225,14 @@ body {
 
 .name {
     font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .person {
     margin: 1rem auto;
     border-radius: 50%;
-    width: 10rem;
+    max-width: 10rem;
     transition: .5s;
 }
 
@@ -282,6 +301,7 @@ body {
         transform: translateX(0rem);
     }
 }
+
 @keyframes zoomInOut {
     0%{
         transform: scale(1.5);
@@ -302,6 +322,7 @@ body {
         transform: rotate(360deg);
     }
 }
+
 @media (min-width: 50rem) {
     .navBar {
         font-size: 1.5rem;
@@ -309,9 +330,5 @@ body {
 
     .logo {
         width: 7rem;
-    }
-
-    .person {
-        width: 15rem;
     }
 }
