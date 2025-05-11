@@ -5,6 +5,9 @@ body {
     font-size: 1.2rem;
 }
 
+.main{
+    background-color: rgb(228, 239, 245);
+}
 /* remove default underline of 'a' tag */
 .link{
     text-decoration: none;
@@ -56,7 +59,6 @@ body {
 
 /* the main container of the product section */
 .mainSection {
-    background-color: rgb(228, 239, 245);
     padding: 2rem;
     text-align: center;
 }
@@ -65,10 +67,9 @@ body {
 .entice {/*goal: viewers should be enticed*/
     background-image: url("./pictures/all\ in\ one.webp");
     background-size: contain;
-    background-color: rgb(228, 239, 245, 0.5);;
     background-blend-mode: overlay;
     padding: 2rem;
-    color: rgb(8, 134, 202);
+    color: rgb(95, 169, 208);
     text-align: left;
     animation: rightToLeft 1.5s ease 2s;
 }
@@ -151,11 +152,9 @@ body {
     align-items: center;
 }
 
-.features {
+.features{
     padding: 1rem;
-    background: linear-gradient(to left, rgb(37, 108, 136), rgb(228, 239, 245));
 }
-
 .num,
 .feature {
     display: inline;
@@ -198,11 +197,6 @@ body {
     text-align: center;
 }
 
-.testimonials {
-    background-color: rgb(170, 206, 226);
-    padding: 1rem;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -211,7 +205,7 @@ body {
 }
 
 .card {
-    background-color: rgb(228, 239, 245);
+    background-color: rgb(170, 206, 226);
     margin: 1rem;
     max-width: 15rem;
     height: 40rem;
@@ -242,13 +236,11 @@ body {
 }
 
 .signUp{
-    background: linear-gradient(to right, rgb(37, 108, 136), rgb(228, 239, 245));
     padding: 1rem;
 }
 
 .form {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
