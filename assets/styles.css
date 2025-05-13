@@ -201,17 +201,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .card {
     background-color: rgb(170, 206, 226);
     margin: 1rem;
     max-width: 15rem;
-    height: 40rem;
+    height: 32rem;
     padding: 2rem;
-    display: grid;
     text-align: center;
+}
+
+.block{
+    display: block;
 }
 
 .card:hover{
@@ -225,7 +227,9 @@ body {
 }
 
 .person {
+    display: block;
     margin: 1rem auto;
+    margin-top: 2rem;
     border-radius: 50%;
     max-width: 10rem;
     transition: .5s;
@@ -323,9 +327,5 @@ body {
 @media (min-width: 50rem) {
     .navBar {
         font-size: 1.5rem;
-    }
-
-    .logo {
-        width: 7rem;
     }
 }
